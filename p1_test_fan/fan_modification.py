@@ -10,4 +10,9 @@ class FanModification:
         self.__radius = float(radius)
         self.__color = str(color)
         self.__on = bool(on)
-        
+
+    def get_speed(self): return self.__speed
+    def get_radius(self): return self.__radius
+    def get_color(self): return self.__color
+    def is_on(self): return self.__on
+    
