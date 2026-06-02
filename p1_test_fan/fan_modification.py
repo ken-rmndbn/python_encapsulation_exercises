@@ -32,3 +32,6 @@ class FanModification:
     def __str__(self):
         status_color = OutputColor.GREEN if self.__on else OutputColor.RED
         status_text = "ON" if self.__on else "OFF"
+
+        speed_name = {1: "SLOW", 2: "MEDIUM", 3: "FAST"}. get(self.__speed, "UNKNOWN")
+        
