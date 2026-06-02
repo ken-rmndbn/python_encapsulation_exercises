@@ -15,4 +15,20 @@ class FanModification:
     def get_radius(self): return self.__radius
     def get_color(self): return self.__color
     def is_on(self): return self.__on
-    
+
+    def set_speed(self, speed):
+        if speed in [FanModification.SLOW, FanModification.MEDIUM, FanModification.FAST]:
+            self.__speed = speed
+
+    def set_radius(self, radius):
+        self.__radius = radius
+
+    def set_color(self, color):
+        self.__color = color
+
+    def set_on(self, on):
+        self.__on = on
+
+    def __str__(self):
+        status_color = OutputColor.GREEN if self.__on else OutputColor.RED
+        status_text = "ON" if self.__on else "OFF"
