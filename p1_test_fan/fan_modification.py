@@ -34,4 +34,11 @@ class FanModification:
         status_text = "ON" if self.__on else "OFF"
 
         speed_name = {1: "SLOW", 2: "MEDIUM", 3: "FAST"}. get(self.__speed, "UNKNOWN")
-        
+
+        return(
+            f"{OutputColor.BOLD}Speed:{OutputColor.END} {OutputColor.CYAN}{speed_name} ({self.__speed}){OutputColor.END}\n"
+            f"{OutputColor.BOLD}Color:{OutputColor.END} {OutputColor.YELLOW}{self.__color.capitalize()}{OutputColor.END}\n"
+            f"{OutputColor.BOLD}Radius:{OutputColor.END} {self.__radius}\n"
+            f"{OutputColor.BOLD}Status:{OutputColor.END} {status_color}{status_text}{OutputColor.END}\n"
+            f" {'-' * 25}"
+        )
