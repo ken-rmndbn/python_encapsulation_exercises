@@ -1,3 +1,4 @@
+class OutputColor:
 GREEN = '\033[92m'
 RED = '\033[91m'
 CYAN = '\033[96m'
