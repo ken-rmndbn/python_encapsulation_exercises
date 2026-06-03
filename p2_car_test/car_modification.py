@@ -6,3 +6,6 @@ class CarModification:
 
         def accelerate(self):
             self.__speed += 5
+
+        def brake(self):
+            self.__speed = max(0, self.__speed - 5)
