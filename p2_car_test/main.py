@@ -15,4 +15,6 @@ def main():
     for car in range(5):
         my_car.brake()
         print(f"Current speed: {OutputColor.CYAN}{my_car.get_speed()}{OutputColor.RESET}")
-        
+
+if __name__ == "__main__":
+    main()
