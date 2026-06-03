@@ -11,4 +11,8 @@ def main():
         my_car.accelerate()
         print(f"Current speed: {OutputColor.CYAN}{my_car.get_speed()}{OutputColor.RESET}")
 
-    
+    print(f"\n{OutputColor.RED}Breaking...{OutputColor.RESET}")
+    for car in range(5):
+        my_car.brake()
+        print(f"Current speed: {OutputColor.CYAN}{my_car.get_speed()}{OutputColor.RESET}")
+        
