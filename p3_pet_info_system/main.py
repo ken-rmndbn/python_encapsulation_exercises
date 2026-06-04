@@ -15,3 +15,8 @@ def main():
     except ValueError:
         print(f"{Color.FAIL}Invalid age entered. Default to 0.{Color.ENDC}")
         age = 0
+
+    my_pet.__set_name__(name)
+    my_pet.set_animal_type(pet_type)
+    my_pet.set_age(age)
+    
