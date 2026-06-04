@@ -6,4 +6,12 @@ def main():
 
     my_pet = PetModification()
 
-    
+    print(f"{Color.BLUE}Please enter your pet details:{Color.ENDC}")
+
+    name = input("Enter pet name: ")
+    pet_type = input("Enter animal type: ")
+    try:
+        age = int(input("Enter pet age: "))
+    except ValueError:
+        print(f"{Color.FAIL}Invalid age entered. Default to 0.{Color.ENDC}")
+        age = 0
