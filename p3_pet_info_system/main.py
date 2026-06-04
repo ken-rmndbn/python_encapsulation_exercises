@@ -19,4 +19,13 @@ def main():
     my_pet.__set_name__(name)
     my_pet.set_animal_type(pet_type)
     my_pet.set_age(age)
-    
+
+    print(f"\n{Color.GREEN}{Color.BOLD}Successfully Registered!{Color.ENDC}")
+    print("-" * 30)
+    print(f"{Color.YELLOW}Pet Name: {Color.ENDC} {my_pet.get_name()}")
+    print(f"{Color.YELLOW}Animal Type: {Color.ENDC} {my_pet.get_animal_type()}")
+    print(f"{Color.YELLOW}Pet Age: {Color.ENDC} {my_pet.get_age()}")
+    print("-" * 30)
+
+if __name__ == "__main__":
+    main()
